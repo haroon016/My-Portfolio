@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -62,7 +63,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar__brand">
-        <a href="#home">Haroon Zahid Bajwa</a>
+        <Link to="/" onClick={handleMenuClose}>
+          Haroon Zahid Bajwa
+        </Link>
         <span>Projects | Operations | QA</span>
       </div>
 
@@ -84,24 +87,24 @@ export default function Navbar() {
         className={`navbar__links ${isMenuOpen ? "navbar__links--open" : ""}`}
       >
         <li>
-          <a href="#home" onClick={handleMenuClose}>
+          <NavLink to="/" onClick={handleMenuClose}>
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#about" onClick={handleMenuClose}>
+          <NavLink to="/about" onClick={handleMenuClose}>
             About
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#experience" onClick={handleMenuClose}>
-            Experience
-          </a>
+          <NavLink to="/services" onClick={handleMenuClose}>
+            Services
+          </NavLink>
         </li>
         <li>
-          <a href="#contact" onClick={handleMenuClose}>
+          <NavLink to="/contact-us" onClick={handleMenuClose}>
             Contact
-          </a>
+          </NavLink>
         </li>
         <li>
           <a

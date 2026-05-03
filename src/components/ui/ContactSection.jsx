@@ -1,6 +1,6 @@
 import "./PortfolioSections.css";
 
-export default function Contact() {
+export default function ContactSection() {
   return (
     <section id="contact" className="portfolio-section portfolio-section--contact">
       <div className="section-shell contact-panel" data-reveal>

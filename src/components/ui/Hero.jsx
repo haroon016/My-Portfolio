@@ -1,7 +1,7 @@
-import cover from "../assets/cover.avif";
-import "./Cover.css";
+import cover from "../../assets/cover.avif";
+import "./Hero.css";
 
-export default function Cover() {
+export default function Hero() {
   return (
     <section
       id="home"

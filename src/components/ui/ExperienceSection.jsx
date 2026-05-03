@@ -9,7 +9,7 @@ const responsibilities = [
   "Bridge communication between CEOs and technical and design teams on a daily basis.",
 ];
 
-export default function Experience() {
+export default function ExperienceSection() {
   return (
     <section id="experience" className="portfolio-section portfolio-section--muted">
       <div className="section-shell">

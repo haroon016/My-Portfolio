@@ -1,6 +1,6 @@
 import "./PortfolioSections.css";
 
-export default function About() {
+export default function AboutSection() {
   return (
     <section id="about" className="portfolio-section">
       <div className="section-shell">
