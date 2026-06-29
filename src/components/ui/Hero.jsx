@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div className="cover__content" data-reveal="hero">
         <p className="cover__eyebrow" data-reveal-child>
-          Projects and Operations Manager | Manual QA Lead
+          Technical Project Manager | AI Automation & Operations Specialist
         </p>
 
         <h1 className="cover__title" data-reveal-child>
@@ -18,14 +18,14 @@ export default function Hero() {
         </h1>
 
         <p className="cover__lead" data-reveal-child>
-          Creating reliable systems, smoother operations, and quality-driven digital
-          experiences with more than 4 years of leadership across projects and delivery.
+          Leading cross-functional engineering teams, delivery operations, and AI-driven
+          workflows across SaaS products from idea to production.
         </p>
 
         <p className="cover__text" data-reveal-child>
-          My work brings together project management, operations leadership, manual QA,
-          and AI automation workflows to help teams stay aligned, move faster, and deliver
-          with confidence.
+          I bring together Agile delivery, technical documentation, stakeholder
+          management, and workflow automation to help teams stay aligned, ship cleanly,
+          and remove manual work wherever possible.
         </p>
 
         <div className="cover__actions" data-reveal-child>
@@ -39,6 +39,12 @@ export default function Hero() {
           </a>
           <a
             className="cover__secondary"
+            href="mailto:haroonjut2001@gmail.com"
+          >
+            Email
+          </a>
+          <a
+            className="cover__secondary"
             href="https://wa.me/923404676016"
             target="_blank"
             rel="noreferrer"
@@ -46,7 +52,7 @@ export default function Hero() {
             WhatsApp
           </a>
           <a className="cover__secondary" href="tel:+923404676016">
-            Call Me
+            Call
           </a>
         </div>
       </div>

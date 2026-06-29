@@ -12,6 +12,10 @@
   background: transparent;
 }
 
+.portfolio-section--credentials {
+  background: transparent;
+}
+
 .section-shell {
   max-width: 1180px;
   margin: 0 auto;
@@ -45,7 +49,7 @@
 }
 
 .about-card,
-.responsibility-card,
+.experience-card,
 .stack-panel,
 .contact-panel {
   background: rgba(255, 255, 255, 0.04);
@@ -60,7 +64,7 @@
 }
 
 .about-card:hover,
-.responsibility-card:hover,
+.experience-card:hover,
 .stack-panel:hover,
 .contact-panel:hover {
   background: rgba(255, 255, 255, 0.065);
@@ -72,7 +76,8 @@
 .about-card p,
 .stack-copy,
 .contact-copy,
-.responsibility-card p {
+.experience-card p,
+.experience-card li {
   color: rgba(255, 255, 255, 0.82);
   font-size: 1.04rem;
   line-height: 1.8;
@@ -118,19 +123,104 @@
   line-height: 1.5;
 }
 
-.responsibility-grid {
+.experience-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 
-.responsibility-card {
+.experience-card {
   min-height: 190px;
+}
+
+.experience-card__role {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.experience-card__company {
+  margin-top: 6px;
+  color: #00bcd4;
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.experience-card__list {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.experience-card__list li + li {
+  margin-top: 10px;
 }
 
 .stack-panel {
   display: grid;
   gap: 24px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.credential-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.credential-card__title {
+  margin-bottom: 14px;
+  color: #00bcd4;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.88rem;
+}
+
+.credential-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.credential-list li {
+  display: grid;
+  gap: 5px;
+}
+
+.credential-list strong {
+  color: #fff;
+  font-size: 1.02rem;
+}
+
+.credential-list span,
+.credential-list em {
+  color: rgba(255, 255, 255, 0.78);
+  font-style: normal;
+}
+
+.credential-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.skill-group__title {
+  margin-bottom: 12px;
+  color: #f8f8f8;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .stack-list {
@@ -158,6 +248,10 @@
   border-color: rgba(0, 188, 212, 0.35);
   color: white;
   transform: translateY(-3px);
+}
+
+.credential-card .stack-pill {
+  width: auto;
 }
 
 .contact-panel {
@@ -193,18 +287,21 @@
 
 @media (prefers-reduced-motion: reduce) {
   .about-card,
-  .responsibility-card,
+  .experience-card,
   .stack-panel,
+  .credential-card,
   .contact-panel,
   .metric-card,
+  .skill-group__title,
   .stack-pill,
   .contact-actions a {
     transition: none;
   }
 
   .about-card:hover,
-  .responsibility-card:hover,
+  .experience-card:hover,
   .stack-panel:hover,
+  .credential-card:hover,
   .contact-panel:hover,
   .metric-card:hover,
   .stack-pill:hover,
@@ -215,7 +312,8 @@
 
 @media (max-width: 900px) {
   .about-grid,
-  .responsibility-grid,
+  .experience-grid,
+  .credentials-grid,
   .metric-row {
     grid-template-columns: 1fr;
   }
@@ -227,8 +325,9 @@
   }
 
   .about-card,
-  .responsibility-card,
+  .experience-card,
   .stack-panel,
+  .credential-card,
   .contact-panel {
     padding: 22px;
   }
@@ -251,13 +350,21 @@
   .about-card p,
   .stack-copy,
   .contact-copy,
-  .responsibility-card p {
+  .experience-card p,
+  .experience-card li,
+  .credential-list span,
+  .credential-list em,
+  .credential-list strong {
     font-size: 0.98rem;
     line-height: 1.7;
   }
 
-  .responsibility-card {
+  .experience-card {
     min-height: auto;
+  }
+
+  .experience-card__list {
+    margin-top: 12px;
   }
 
   .stack-list,

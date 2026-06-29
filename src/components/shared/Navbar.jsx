@@ -66,7 +66,7 @@ export default function Navbar() {
         <Link to="/" onClick={handleMenuClose}>
           Haroon Zahid Bajwa
         </Link>
-        <span>Projects | Operations | QA</span>
+        <span>Technical PM | Automation | Ops</span>
       </div>
 
       <button
@@ -98,7 +98,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/services" onClick={handleMenuClose}>
-            Services
+            Experience
           </NavLink>
         </li>
         <li>
